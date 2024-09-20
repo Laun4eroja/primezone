@@ -106,14 +106,6 @@ function changeSlide(index) {
 
 
 
-
-
-
-
-
-
-
-
 const swiperAwards = new Swiper('.awards__slider', {
   slidesPerView: 3,
   spaceBetween: 0,
@@ -123,4 +115,18 @@ const swiperAwards = new Swiper('.awards__slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   }
+});
+
+
+
+
+
+
+
+
+document.querySelectorAll('.accordeon__trigger').forEach((item) => {
+  item.addEventListener('click', () => {
+    item.parentNode.classList.toggle('accordeon__item--active');
+    item.classList.toggle('accordeon__trigger--opened');
+  });
 });
