@@ -49,6 +49,10 @@ body {
     background-attachment: fixed;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header */
 
 .header {
@@ -487,7 +491,7 @@ body {
 /* news */
 
 .news {
-    padding: 128px 0 72px 0;
+    padding: 128px 0 100px 0;
     background-color: #2d2f36;
 }
 
@@ -642,3 +646,236 @@ body {
     100% { opacity: 1; }
 }
 
+
+
+/* contacts */
+
+.contacts {
+    background-color: #fff;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contacts__left {
+    position: relative;
+    margin-bottom: -20px;
+    margin-left: -160px;
+    margin-top: -20px;
+    margin: -20px 0 -20px -160px;
+    padding: 60px 50px 0 160px;
+    width: 1000px;
+}
+
+.contacts__left-active {
+    position: absolute;
+    background-color: #fff;
+    bottom: 0;
+    box-shadow: 0 0 81px 0 rgba(30, 48, 85, 0.4);
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 90;
+}
+
+.contacts__left-next {
+    background-color: #ffffff;
+    bottom: 10px;
+    box-shadow: 0 0 81px 0 rgba(30, 48, 85, 0.4);
+    left: 10px;
+    margin-right: -30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 80;
+}
+
+.contacts__right {
+    flex: 0 0 352px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 48px 0 98px 30px;
+}
+
+.contacts__body {
+    position: relative;
+    z-index: 100;
+}
+
+.contacts__title {
+    font-family: 'PT Serif';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-bottom: 43px;
+}
+
+.contacts__info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.contacts__info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts__info-item p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+/* form */
+
+.form__title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.form__block {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.form__block input {
+    font-family: "Roboto", sans-serif;
+    background: transparent;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #303239;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #303239;
+}
+
+.form__block input::placeholder {
+    font-size: 18px;
+    color: #8b98a7;
+}
+
+.form__block input:focus::placeholder {
+    color: #b29a6d;
+}
+
+.form__block input:focus {
+    outline: none;
+}
+
+.form__block-name {
+    width: 100%;
+}
+
+.form__block-mail, 
+.form__block-phone, 
+.form__block-company, 
+.form__block-count {
+    width: 300px;
+}
+
+.text__area {
+    margin-bottom: 50px;
+}
+
+.text__area textarea {
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    border: none;
+    border: 1px solid #303239;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #303239;
+}
+
+.text__area textarea::placeholder {
+    font-size: 18px;
+    color: #8b98a7;
+}
+
+.text__area textarea:focus::placeholder {
+    color: #b29a6d;
+}
+
+.form__btn {
+    background-color: #b29a6d;
+    border-radius: 5px;
+    padding: 20px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.contacts__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contacts__items-title {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contacts__items-title.contacts__items-title--active {
+    color: #b29a6d;
+}
+
+.contacts__content-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.contacts__content-text {
+    position: relative;
+    width: 400px;
+    top: -550px;
+    left: 800px;
+    font-size: 14px;
+}
+
+.contacts__content-text p+p {
+    margin-top: 20px;
+}
+
+
+
+/* footer */
+
+.footer {
+    padding: 100px 0 80px;
+    color: #9da0a6;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.copyrigt {
+    color: #fff;
+}
+
+.author {
+    font-size: 13px;
+}

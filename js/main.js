@@ -104,8 +104,6 @@ function changeSlide(index) {
 
 
 
-
-
 const swiperAwards = new Swiper('.awards__slider', {
   slidesPerView: 3,
   spaceBetween: 0,
@@ -119,14 +117,63 @@ const swiperAwards = new Swiper('.awards__slider', {
 
 
 
-
-
-
-
-
 document.querySelectorAll('.accordeon__trigger').forEach((item) => {
   item.addEventListener('click', () => {
     item.parentNode.classList.toggle('accordeon__item--active');
     item.classList.toggle('accordeon__trigger--opened');
   });
 });
+
+
+
+// document.querySelector('input[type="number"]').addEventListener('input', function(e) {
+//   e.target.value = e.target.value.replace(/\D+/g, "");  // Прощайте, лишние символы!
+// });
+
+// const elementPhone = document.getElementById('number');
+const elementPhone = document.getElementById('phone');
+const maskOptions = {
+  mask: /^[0-9]\d{0,17}$/,
+  lazy: false
+};
+const mask = IMask(elementPhone, maskOptions);
+
+const elementPhoneTwo = document.getElementById('phone-2');
+const maskOptionsTwo = {
+  mask: /^[0-9]\d{0,17}$/,
+  lazy: false
+};
+const maskTwo = IMask(elementPhoneTwo, maskOptions);
+
+
+
+IMask(
+  document.getElementById('number'),
+  {
+    mask: Number,
+    min: 0,
+    max: 100000000,
+    thousandsSeparator: ' '
+  }
+)
+
+
+
+
+const formTitle = document.querySelectorAll('.contacts__items-title');
+const formBlock = document.querySelectorAll('.form');
+
+formTitle.forEach((title) => {
+  title.addEventListener('click', () => {
+    formBlock.forEach((block) => {
+      block.classList.add('hidden')
+    })
+    formTitle.forEach((block) => {
+      block.classList.remove('contacts__items-title--active')
+    })
+    const contentForm = document.querySelector('#' + title.dataset.tab);
+    contentForm.classList.remove('hidden')
+    title.classList.add('contacts__items-title--active')
+  })
+});
+
