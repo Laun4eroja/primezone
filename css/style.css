@@ -225,6 +225,7 @@ body {
     margin: -20px 0 -20px -160px;
     padding: 60px 30px 60px 160px;
     width: 1000px;
+    /* height: 800px; */
 }
 
 .info__left-active {
@@ -265,7 +266,7 @@ body {
 }
 
 .info__right-btn {
-    background-color: #b29a6d;
+    background-color: #00a1d9;
     border-radius: 3px;
     padding: 18px;
     font-size: 16px;
@@ -290,7 +291,7 @@ body {
     left: 0;
     width: 4px;
     height: calc((100% / var(--num-btns)) / 2);
-    background-color: #b29a6d;
+    background-color: #00a1d9;
     transition: 0.3s;
 }
 
@@ -337,6 +338,10 @@ body {
     font-weight: 500;
     line-height: 1.25;
     margin-bottom: 48px;
+}
+
+.tab__slide-img {
+    margin-bottom: 50px;
 }
 
 .tab__slide-text {
@@ -491,7 +496,7 @@ body {
 /* news */
 
 .news {
-    padding: 128px 0 100px 0;
+    padding: 100px 0;
     background-color: #2d2f36;
 }
 
@@ -559,6 +564,11 @@ body {
     user-select: none;
 }
 
+.accordeon__trigger img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
 .accordeon__trigger-data {
     display: flex;
     gap: 24px;
@@ -623,6 +633,7 @@ body {
     padding-top: 16px;
     padding-bottom: 0;
     animation:  fadeIn 1.5s;
+    line-height: 1.55;
     /* transition: opacity 2s ease, height ease 2s; */
 }
 
@@ -631,10 +642,16 @@ body {
     opacity: 1;
     height: auto;
     padding-bottom: 20px;
+    padding-left: 136px;
+    padding-right: 50px;
 }
 
-.accordeon__content {
-    line-height: 1.55;
+.accordeon__content img {
+    width: 100%;
+}
+
+.accordeon__content img+img {
+    margin-top: 30px;
 }
 
 .accordeon__content p+p {
@@ -768,7 +785,7 @@ body {
 }
 
 .form__block input:focus::placeholder {
-    color: #b29a6d;
+    color: #00a1d9;
 }
 
 .form__block input:focus {
@@ -810,11 +827,11 @@ body {
 }
 
 .text__area textarea:focus::placeholder {
-    color: #b29a6d;
+    color: #00a1d9;
 }
 
 .form__btn {
-    background-color: #b29a6d;
+    background-color: #00a1d9;
     border-radius: 5px;
     padding: 20px 50px;
     font-size: 16px;
@@ -835,7 +852,7 @@ body {
 }
 
 .contacts__items-title.contacts__items-title--active {
-    color: #b29a6d;
+    color: #00a1d9;
 }
 
 .contacts__content-title {
@@ -878,4 +895,13 @@ body {
 
 .author {
     font-size: 13px;
+}
+
+body {
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
 }
