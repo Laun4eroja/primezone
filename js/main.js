@@ -62,7 +62,7 @@ const root = document.querySelector(":root");
 
 const numBtns = tabBtns.length;
 
-root.style.setProperty("--num-btns", numBtns);
+root.style.setProperty(2, numBtns);
 
 tabBtns[0].classList.add("active");
 tabSlide[0].classList.add("active");
