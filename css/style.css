@@ -449,6 +449,11 @@ body {
     /* background-color: #333366; */
 }
 
+.container__map {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .map__title {
     font-family: 'PT Serif';
     font-size: 48px;
