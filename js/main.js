@@ -126,10 +126,6 @@ document.querySelectorAll('.accordeon__trigger').forEach((item) => {
 
 
 
-// document.querySelector('input[type="number"]').addEventListener('input', function(e) {
-//   e.target.value = e.target.value.replace(/\D+/g, "");  // Прощайте, лишние символы!
-// });
-
 const elementPhone = document.getElementById('phone');
 const maskOptions = {
   mask: /^[0-9]\d{0,17}$/,
