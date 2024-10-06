@@ -103,6 +103,11 @@ function changeSlide(index) {
 }
 
 
+document.getElementById('burger').addEventListener('click', function() {
+  document.querySelector('header').classList.toggle('open')
+});
+
+
 
 const swiperAwards = new Swiper('.awards__slider', {
   slidesPerView: 3,

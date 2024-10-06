@@ -63,14 +63,19 @@ body {
     top: 50px;
     left: 0;
     right: 0;
-    max-width: 1032px;
+    padding: 0 1.875em;
+    /* max-width: 1032px; */
+}
+
+.header.open .sidebar {
+    transform: translateX(100%);
 }
 
 .header__row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 240px;
+    gap: 20px;
 }
 
 .header__logo a img {
@@ -78,20 +83,98 @@ body {
     max-width: 200px;
 }
 
-.header__nav ul {
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
-}
-
-.header__nav ul li {
+.header__signUp a {
     color: #fff;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 500;
     text-transform: uppercase;
+    font-size: 14px;
+    padding: 15px 15px 13px;
+    border: 1px solid rgba(255, 255, 255, .3);
 }
 
+.header__burger {
+    z-index: 150;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+
+.header__burger span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+
+.header__burger span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+.header.open .header__burger span {
+    background-color: #00a1d9;
+}
+
+.header.open .header__burger span:nth-child(1) {
+    transform: translateY(0) rotate(135deg);
+}
+
+.header.open .header__burger span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(150%);
+}
+
+.header.open .header__burger span:nth-child(3) {
+    transform: translateY(0) rotate(-135deg);
+}
+
+.sidebar {
+    transition: transform ease-in .5s;
+    position: relative;
+    top: -105px;
+    left: -380px;
+    right: 0;
+    bottom: 0;
+    z-index: 19;
+    padding: 150px 20px 20px 20px;
+    height: 100vh;
+    width: 350px;
+    background-color: #fff;
+}
+
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #00a1d9;
+    font-size: 20px;
+}
+
+.sidebar__phones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar__phones-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.sidebar__phones-item p {
+    font-size: 20px;
+}
+
+
+/* Intro */
 
 .intro {
     position: relative;
@@ -204,7 +287,6 @@ body {
 .intro__content-title.active {
     opacity: 1;
 }
-
 
 
 /* Info */
