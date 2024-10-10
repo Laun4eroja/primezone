@@ -200,10 +200,6 @@ body {
     padding: 0;
 }
 
-.switch_lang img {
-    width: 30px;
-}
-
 .switch_lang-list > li {
     position: relative;
     display: block;
