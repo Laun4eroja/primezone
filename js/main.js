@@ -109,18 +109,6 @@ document.getElementById('burger').addEventListener('click', function() {
 
 
 
-const swiperAwards = new Swiper('.awards__slider', {
-  slidesPerView: 3,
-  spaceBetween: 0,
-  loop: false,
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  }
-});
-
-
 
 document.querySelectorAll('.accordeon__trigger').forEach((item) => {
   item.addEventListener('click', () => {

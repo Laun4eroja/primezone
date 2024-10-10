@@ -609,7 +609,6 @@ body {
 
 .map {
     padding: 40px 0;
-    background-color: #00a1d9;
     background-color: #333366;
 }
 
@@ -1044,6 +1043,57 @@ body {
     color: #00a1d9;
 }
 
+.form__agreement {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.form__agreement a {
+    color: #00a1d9;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 2px solid #7e9bbd;
+    border-radius: 4px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
+
+.custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url('./../images/icons/check-mark.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+
+    transition: .2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
 .form__btn {
     background-color: #00a1d9;
     border-radius: 5px;
@@ -1127,4 +1177,60 @@ body {
 
 .author {
     font-size: 13px;
+}
+
+
+
+
+
+
+/* agreement */
+
+.agreement-section {
+    padding: 100px 0 50px;
+    color: #8b98a7;
+}
+
+.agreement-container {
+    max-width: 800px;
+}
+
+.agreement-section__top {
+    color: #2d2f36;
+    margin-bottom: 50px;
+}
+
+.agreement-section__title {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #00a1d9;
+}
+
+.agreement-section__text {
+    font-size: 18px;
+}
+
+.agreement-section__main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.agreement-section__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.agreement-section__item-title {
+    font-size: 18px;
+    color: #303239;
+}
+
+.agreement-section__item-text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
