@@ -70,7 +70,6 @@ body {
 }
 
 .header__logo {
-    flex-grow: 1;
     align-self: center;
 }
 
@@ -78,6 +77,13 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 200px;
+}
+
+.header__right-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 .header__signUp a {
