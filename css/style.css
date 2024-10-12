@@ -984,13 +984,13 @@ body {
 }
   
 .contacts__tab-btns {
-    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  
+
 .contacts__tab-btn {
+    padding: 10px 0;
     width: calc(100% / var(--num-btns));
     text-align: center;
     color: #778899;
