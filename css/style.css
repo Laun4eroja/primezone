@@ -504,12 +504,14 @@ body {
     opacity: 0;
     transform: translateX(10%);
     transition: opacity .3s ease-in, transform .5s ease-in;
+    visibility: hidden;
 }
 
 .tab__slide.active {
     top: 0;
     opacity: 1;
     transform: translateX(0);
+    visibility: visible;
 }
 
 /* <-- Tabs --> */
