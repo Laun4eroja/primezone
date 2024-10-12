@@ -1035,11 +1035,13 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    visibility: hidden;
 }
 
 .contacts__tab-slide.active {
     top: 0;
     opacity: 1;
+    visibility: visible;
 }
 
 .contacts__tab-slide .contacts__content-text {
