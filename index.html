@@ -16,9 +16,21 @@
 <body>
     <div class="intro">
         <div class="intro__buttons">
-            <div class="intro__btn">01</div>
-            <div class="intro__btn">02</div>
-            <div class="intro__btn">03</div>
+            <div class="intro__btn">
+                <svg height="25" width="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="#fff" stroke-width="2" fill="#fff" />
+                </svg>
+            </div>
+            <div class="intro__btn">
+                <svg height="25" width="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="#fff" stroke-width="2" fill="#fff" />
+                </svg>
+            </div>
+            <div class="intro__btn">
+                <svg height="25" width="25">
+                    <circle cx="12.5" cy="12.5" r="10" stroke="#fff" stroke-width="2" fill="#fff" />
+                </svg>
+            </div>
             <div class="intro__indicator" id="intro__indicator"></div>
         </div>
         <div class="intro__media">
@@ -35,7 +47,6 @@
         </div>
         <div class="intro__scroll-down">
             <a href="#info">
-                <!-- <img src="./images/icons/arrow-down.png" alt=""> -->
                 <img src="./images/icons/down-arrow.png" alt="">
             </a>
         </div>
@@ -212,6 +223,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="info__spiral">
+                        <img src="./images/icons/spiral.png" alt="spiral">
+                    </div>
                     <div class="info__right">
                         <h2>Продукты и сервисы</h2>
                         <ul class="tab__btns">
@@ -294,117 +308,130 @@
         <section class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
-                    <div class="contacts__left">
-                        <div class="contacts__left-active"></div>
-                        <div class="contacts__left-next"></div>
-                        <div class="contacts__body">
-                            <h2 class="contacts__title">Контакты</h2>
-                            <div class="contacts__info">
-                                <div class="contacts__info-item">
-                                    <p>Россия</p>
-                                    <a href="tel:+74953696070">+7 (495) 369-60-70</a>
-                                    <a href="tel:+74993481570">+7 (499) 348-15-70</a>
-                                    <a href="tel:+78001003983">8 (800) 100-39-83</a>
-                                </div>
-                                <div class="contacts__info-item">
-                                    <p>Казахстан</p>
-                                    <a href="tel:+78000806985">8 (800) 080-69-85</a>
-                                </div>
-                                <div class="contacts__info-item">
-                                    <p>e-mail</p>
-                                    <a href="mailto:support@primezone.ru" target="_blank">support@primezone.ru</a>
-                                </div>
-                            </div>
-                            <form class="form" action="" data-tab="1" id="form-1">
-                                <h3 class="form__title">Оставить заявку</h3>
-                                <div class="form__block">
-                                    <input name="name" class="form__block-name" type="text" placeholder="Имя" required>
-                                    <input name="email" class="form__block-mail" type="email" placeholder="e-mail"
-                                        required>
-                                    <input name="phone" id="phone" class="form__block-phone" type="text"
-                                        placeholder="Телефон" required>
-                                    <input name="companyName" class="form__block-company" type="text"
-                                        placeholder="Название компании" required>
-                                    <input name="countOfEmployee" id="number" class="form__block-count" type="text"
-                                        placeholder="Количество сотрудников" required>
-                                </div>
-                                <div class="text__area">
-                                    <textarea name="textarea" placeholder="Текст сообщения"></textarea>
-                                </div>
-                                <div class="form__agreement">
-                                    <label>
-                                        <input type="checkbox" name="agreement" required class="real-checkbox">
-                                        <span class="custom-checkbox"></span>
-                                        Согласен на обработку персональных данных в соответствии с <a
-                                            href="agreement.html" target="_blank">Политикой конфиденциальности</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="form__btn">Отправить</button>
-                                <div class="contacts__content-text">
-                                    <p>
-                                        Наша программа запускается только для работодателей, являющихся юридическими
-                                        лицами,
-                                        сотрудники которых становятся нашими конечными пользователями.
-                                        Подключение к программе не доступно для физических лиц
-                                    </p>
-                                    <p>
-                                        Для запуска программы работодателю необходимо заключить лицензионное соглашение
-                                        c ООО
-                                        “ПРАЙМЗОН” и оплатить лицензионное вознаграждение за каждого подключаемого
-                                        сотрудника
-                                        к Программе PrimeZone
-                                    </p>
-                                </div>
-                            </form>
-                            <form class="form hidden" action="" data-tab="2" id="form-2">
-                                <h3 class="form__title">Мерчант хочет оставить заявку</h3>
-                                <div class="form__block">
-                                    <input name="name" class="form__block-name" type="text" placeholder="Имя" required>
-                                    <input name="email" class="form__block-mail" type="email" placeholder="e-mail"
-                                        required>
-                                    <input name="phone" id="phone-2" class="form__block-phone" type="text"
-                                        placeholder="Телефон" required>
-                                    <input name="companyName" class="form__block-company" type="text"
-                                        placeholder="Название компании" required>
-                                    <input name="countOfEmployee" class="form__block-count" type="text"
-                                        placeholder="Ваша индустрия" required>
-                                </div>
-                                <div class="text__area">
-                                    <textarea name="textarea" placeholder="Текст сообщения"></textarea>
-                                </div>
-                                <div class="form__agreement">
-                                    <label>
-                                        <input type="checkbox" name="agreement" required class="real-checkbox">
-                                        <span class="custom-checkbox"></span>
-                                        Согласен на обработку персональных данных в соответствии с <a
-                                            href="agreement.html" target="_blank">Политикой конфиденциальности</a>
-                                    </label>
-                                </div>
-                                <button type="submit" class="form__btn">Отправить</button>
-                                <div class="contacts__content-text">
-                                    <p>
-                                        Мы не взимаем комиссий с продаж которые мы генерируем нашим Партнерам,
-                                        единственное что необходимо от Партнера - сформировать эксклюзивное предложение
-                                        для пользователей Программы в виде эксклюзивной скидки или эксклюзивного
-                                        корпоративного тарифа
-                                    </p>
-                                    <p>
-                                        Мы нацелены на долгосрочное сотрудничество с нашими Партнерами и ожидаем, что
-                                        начиная сотрудничество, Партнер готов к взаимодействию на несколько лет.
-                                    </p>
-                                </div>
-                            </form>
+                    <div class="contacts__top">
+                        <h2 class="contacts__title">Контакты</h2>
+                        <div class="contacts__info-item">
+                            <p>Россия</p>
+                            <a href="tel:+74953696070">+7 (495) 369-60-70</a>
+                            <a href="tel:+74993481570">+7 (499) 348-15-70</a>
+                            <a href="tel:+78001003983">8 (800) 100-39-83</a>
+                        </div>
+                        <div class="contacts__info-item">
+                            <p>Казахстан</p>
+                            <a href="tel:+78000806985">8 (800) 080-69-85</a>
+                        </div>
+                        <div class="contacts__info-item">
+                            <p>e-mail</p>
+                            <a href="mailto:support@primezone.ru" target="_blank">support@primezone.ru</a>
                         </div>
                     </div>
-                    <div class="contacts__right">
-                        <div class="contacts__items">
-                            <h3 class="contacts__items-title contacts__items-title--active" data-tab="form-1">
-                                Корпопативным клиентам</h3>
-                            <h3 class="contacts__items-title" data-tab="form-2">Мерчант-партнерам</h3>
-                        </div>
-                        <div class="contacts__content">
-                            <h3 class="contacts__content-title">Перед отправкой запроса на сотрудничество, просим Ваc
-                                ознакомиться с информацией ниже:</h3>
+                    <div class="contacts__body">
+                        <div class="contacts__tab">
+                            <div class="contacts__tab-top">
+                                <div class="contacts__tab-btns">
+                                    <div class="contacts__tab-btn">Корпопативным клиентам</div>
+                                    <div class="contacts__tab-btn">Мерчант-партнерам</div>
+                                </div>
+                                <div class="contacts__tab-indicator" id="contacts__tab-indicator"></div>
+                            </div>
+                            <div class="contacts__tab-text">
+                                <p>
+                                    Перед отправкой запроса на сотрудничество, просим Ваc ознакомиться с информацией
+                                    ниже:
+                                </p>
+                            </div>
+                            <div class="contacts__tab-body">
+                                <div class="contacts__tab-slide">
+                                    <div class="contacts__content-text">
+                                        <p>
+                                            Наша программа запускается только для работодателей, являющихся юридическими
+                                            лицами,
+                                            сотрудники которых становятся нашими конечными пользователями.
+                                            Подключение к программе не доступно для физических лиц
+                                        </p>
+                                        <p>
+                                            Для запуска программы работодателю необходимо заключить лицензионное
+                                            соглашение
+                                            c ООО
+                                            “ПРАЙМЗОН” и оплатить лицензионное вознаграждение за каждого подключаемого
+                                            сотрудника
+                                            к Программе PrimeZone
+                                        </p>
+                                    </div>
+                                    <form class="form" action="">
+                                        <h3 class="form__title">Оставить заявку</h3>
+                                        <div class="form__block">
+                                            <input name="name" class="form__block-name" type="text" placeholder="Имя"
+                                                required>
+                                            <input name="email" class="form__block-mail" type="email"
+                                                placeholder="e-mail" required>
+                                            <input name="phone" id="phone" class="form__block-phone" type="text"
+                                                placeholder="Телефон" required>
+                                            <input name="companyName" class="form__block-company" type="text"
+                                                placeholder="Название компании" required>
+                                            <input name="countOfEmployee" id="number" class="form__block-count"
+                                                type="text" placeholder="Количество сотрудников" required>
+                                        </div>
+                                        <div class="text__area">
+                                            <textarea name="textarea" placeholder="Текст сообщения"></textarea>
+                                        </div>
+                                        <div class="form__agreement">
+                                            <label>
+                                                <input type="checkbox" name="agreement" required class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                                Согласен на обработку персональных данных в соответствии с <a
+                                                    href="agreement.html" target="_blank">Политикой
+                                                    конфиденциальности</a>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="form__btn">Отправить</button>
+                                    </form>
+                                </div>
+                                <div class="contacts__tab-slide">
+                                    <div class="contacts__content-text">
+                                        <p>
+                                            Мы не взимаем комиссий с продаж которые мы генерируем нашим Партнерам,
+                                            единственное что необходимо от Партнера - сформировать эксклюзивное
+                                            предложение
+                                            для пользователей Программы в виде эксклюзивной скидки или эксклюзивного
+                                            корпоративного тарифа
+                                        </p>
+                                        <p>
+                                            Мы нацелены на долгосрочное сотрудничество с нашими Партнерами и ожидаем,
+                                            что
+                                            начиная сотрудничество, Партнер готов к взаимодействию на несколько лет.
+                                        </p>
+                                    </div>
+                                    <form class="form" action="">
+                                        <h3 class="form__title">Мерчант хочет оставить заявку</h3>
+                                        <div class="form__block">
+                                            <input name="name" class="form__block-name" type="text" placeholder="Имя"
+                                                required>
+                                            <input name="email" class="form__block-mail" type="email"
+                                                placeholder="e-mail" required>
+                                            <input name="phone" id="phone-2" class="form__block-phone" type="text"
+                                                placeholder="Телефон" required>
+                                            <input name="companyName" class="form__block-company" type="text"
+                                                placeholder="Название компании" required>
+                                            <input name="countOfEmployee" class="form__block-count" type="text"
+                                                placeholder="Ваша индустрия" required>
+                                        </div>
+                                        <div class="text__area">
+                                            <textarea name="textarea" placeholder="Текст сообщения"></textarea>
+                                        </div>
+                                        <div class="form__agreement">
+                                            <label>
+                                                <input type="checkbox" name="agreement" required class="real-checkbox">
+                                                <span class="custom-checkbox"></span>
+                                                Согласен на обработку персональных данных в соответствии с <a
+                                                    href="agreement.html" target="_blank">Политикой
+                                                    конфиденциальности</a>
+                                            </label>
+                                        </div>
+                                        <button type="submit" class="form__btn">Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -109,16 +109,6 @@ document.getElementById('burger').addEventListener('click', function() {
 
 
 
-
-document.querySelectorAll('.accordeon__trigger').forEach((item) => {
-  item.addEventListener('click', () => {
-    item.parentNode.classList.toggle('accordeon__item--active');
-    item.classList.toggle('accordeon__trigger--opened');
-  });
-});
-
-
-
 const elementPhone = document.getElementById('phone');
 const maskOptions = {
   mask: /^[0-9]\d{0,17}$/,
@@ -143,25 +133,52 @@ IMask(
     max: 100000000,
     thousandsSeparator: ' '
   }
-)
+);
 
 
+const contactsTabBtns = Array.from(document.querySelectorAll(".contacts__tab-btn"));
+const contactsTabIndicator = document.querySelector("#contacts__tab-indicator");
+const contactsTabSlide = Array.from(document.querySelectorAll(".contacts__tab-slide"));
+const contactsRoot = document.querySelector(":root");
 
+const contactsNumBtns = contactsTabBtns.length;
 
-const formTitle = document.querySelectorAll('.contacts__items-title');
-const formBlock = document.querySelectorAll('.form');
+contactsRoot.style.setProperty("--num-btns", contactsNumBtns);
 
-formTitle.forEach((title) => {
-  title.addEventListener('click', () => {
-    formBlock.forEach((block) => {
-      block.classList.add('hidden')
-    })
-    formTitle.forEach((block) => {
-      block.classList.remove('contacts__items-title--active')
-    })
-    const contentForm = document.querySelector('#' + title.dataset.tab);
-    contentForm.classList.remove('hidden')
-    title.classList.add('contacts__items-title--active')
-  })
+contactsTabBtns[0].classList.add("active");
+contactsTabSlide[0].classList.add("active");
+
+let contactsActiveBtn = contactsTabBtns[0];
+let contactsActiveSlide = contactsTabSlide[0];
+
+contactsTabBtns.forEach((el) => {
+  el.addEventListener("click", contactsOnTabBtnClick);
 });
 
+function contactsOnTabBtnClick(e) {
+  e.preventDefault();
+  const contactsBtn = e.target.closest(".contacts__tab-btn");
+  contactsChangeBtn(contactsBtn);
+}
+
+function contactsChangeBtn(contactsBtn) {
+  if (contactsBtn.classList.contains("active")) {
+    return;
+  }
+  contactsActiveBtn.classList.remove("active");
+  contactsBtn.classList.add("active");
+  contactsActiveBtn = contactsBtn;
+  contactsChangeIndicator(contactsBtn);
+}
+
+function contactsChangeIndicator(contactsBtn) {
+  const contactsIndexBtn = contactsTabBtns.indexOf(contactsBtn);
+  contactsTabIndicator.style.left = `calc(${contactsIndexBtn}*100%/${contactsNumBtns})`;
+  contactsChangeSlide(contactsIndexBtn);
+}
+
+function contactsChangeSlide(index) {
+  contactsActiveSlide.classList.remove("active");
+  contactsTabSlide[index].classList.add("active");
+  contactsActiveSlide = contactsTabSlide[index];
+}
