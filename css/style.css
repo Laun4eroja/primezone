@@ -70,7 +70,6 @@ body {
 }
 
 .header__logo {
-    flex-grow: 1;
     align-self: center;
 }
 
@@ -78,6 +77,13 @@ body {
     display: block;
     margin: 0 auto;
     max-width: 200px;
+}
+
+.header__right-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
 }
 
 .header__signUp a {
@@ -189,6 +195,7 @@ body {
 
 .switch_lang {
     font-size: 14px;
+    line-height: 1.7;
     color: #fff;
 }
 
@@ -206,6 +213,11 @@ body {
     padding: 0;
 }
 
+.switch_lang p {
+    padding: 5px 0 0 0;
+    border-bottom: 1px solid #00a1d9;
+}
+
 .switch_lang-list > li {
     position: relative;
     display: block;
@@ -219,7 +231,7 @@ body {
     top: 100%;
     left: 0;
     z-index: 15;
-    width: 90px;
+    width: 100%;
     visibility: hidden;
     opacity: 0;
     transform: translateY(10px);
@@ -976,7 +988,7 @@ body {
 }
   
 .contacts__tab-top {
-    max-width: 500px;
+    max-width: 550px;
     margin-bottom: 25px;
 }
   

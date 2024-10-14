@@ -182,3 +182,4 @@ function contactsChangeSlide(index) {
   contactsTabSlide[index].classList.add("active");
   contactsActiveSlide = contactsTabSlide[index];
 }
+
