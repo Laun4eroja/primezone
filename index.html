@@ -350,23 +350,26 @@
                                     <form class="form" action="">
                                         <h3 class="form__title">Send an application</h3>
                                         <div class="form__block">
-                                            <input class="form__block-input-width" name="name" type="text"
-                                                placeholder="Name" required>
-                                            <input class="form__block-input-width" name="Surname" type="text"
-                                                placeholder="Surname" required>
-                                            <input class="form__block-input-width" name="phone" id="phone" type="text"
-                                                placeholder="Your phone number" required>
-                                            <input class="form__block-input-width" name="email" type="email"
-                                                placeholder="Your e-mail" required>
-                                            <input class="form__block-input-width" name="role" type="text"
-                                                placeholder="What is your role in organization" required>
-                                            <input class="form__block-input-width" name="headcount" id="number"
-                                                type="text" placeholder="What is your headcount" required>
-                                            <input class="form__block-input" name="source" type="text"
-                                                placeholder="When are you ready to schedule a call with exact date"
-                                                required>
-                                            <input class="form__block-input" name="date" type="text"
-                                                placeholder="How did you know about PrimeZone Program?" required>
+                                            <div class="form__block-col">
+                                                <input name="name" type="text" placeholder="Name" required>
+                                                <input name="Surname" type="text" placeholder="Surname" required>
+                                                <input name="phone" id="phone" type="text"
+                                                    placeholder="Your phone number" required>
+                                                <input name="source" type="text"
+                                                    placeholder="When are you ready to schedule a call with exact date"
+                                                    required>
+                                            </div>
+                                            <div class="form__block-col">
+                                                <input name="role" type="text"
+                                                    placeholder="What is your role in organization" required>
+                                                <input name="headcount" id="number" type="text"
+                                                    placeholder="What is your headcount" required>
+
+                                                <input name="email" type="email" placeholder="Your e-mail" required>
+
+                                                <input name="date" type="text"
+                                                    placeholder="How did you know about PrimeZone Program?" required>
+                                            </div>
                                         </div>
                                         <div class="form__agreement">
                                             <label>
@@ -405,14 +408,18 @@
                                     <form class="form" action="">
                                         <h3 class="form__title">Send an application</h3>
                                         <div class="form__block">
-                                            <input class="form__block-input-width" name="merchant_name" type="text"
-                                                placeholder="Name" required>
-                                            <input class="form__block-input-width" name="merchant_surname" type="text"
-                                                placeholder="Surname" required>
-                                            <input class="form__block-input-width" name="merchant_phone" id="phone-2"
-                                                type="text" placeholder="Your phone number" required>
-                                            <input class="form__block-input-width" name="merchant_email" type="email"
-                                                placeholder="Your e-mail" required>
+                                            <div class="form__block-col">
+                                                <input class="form__block-input-width" name="merchant_name" type="text"
+                                                    placeholder="Name" required>
+                                                <input class="form__block-input-width" name="merchant_surname"
+                                                    type="text" placeholder="Surname" required>
+                                            </div>
+                                            <div class="form__block-col">
+                                                <input class="form__block-input-width" name="merchant_phone"
+                                                    id="phone-2" type="text" placeholder="Your phone number" required>
+                                                <input class="form__block-input-width" name="merchant_email"
+                                                    type="email" placeholder="Your e-mail" required>
+                                            </div>
                                         </div>
                                         <div>
                                             <textarea class="text__area" name="merchantfield1" id="merchantfield1"

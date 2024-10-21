@@ -186,7 +186,7 @@
                                             <img src="./images/benefits/benefits-4.png" alt="benefit">
                                         </div>
                                         <p>
-                                            Мы достигаем уровня вовлеченности сотрудников в 85%+, <b>внедряя
+                                            Мы достигаем уровня вовлеченности сотрудников в 86%+, <b>внедряя
                                                 кастомизированную коммуникационную стратегию</b> с приминением наших
                                             лучших
                                             практик на основе внутреннего коммуникационного тулкита
@@ -351,19 +351,24 @@
                                     <form class="form" action="">
                                         <h3 class="form__title">Оставить заявку</h3>
                                         <div class="form__block">
-                                            <input class="form__block-input-width" name="name" type="text" placeholder="Имя" required>
-                                            <input class="form__block-input-width" name="surname" type="text" placeholder="Фамилия" required>
-                                            <input class="form__block-input-width" name="phone" id="phone" type="text" placeholder="Контактный телефон"
-                                                required>
-                                            <input class="form__block-input-width" name="email" type="email" placeholder="Адрес корпоративной почты"
-                                                required>
-                                            <input class="form__block-input-width" name="position" type="text" placeholder="Ваша должность" required>
-                                            <input class="form__block-input-width" name="employees" id="number" type="text"
-                                                placeholder="Количество сотрудников" required>
-                                            <input class="form__block-input" name="source" type="text"
-                                                placeholder="Удобная дата для онлайн-встречи" required>
-                                            <input class="form__block-input" name="date" type="text"
-                                                placeholder="Как Вы узнали о Программе PrimeZone" required>
+                                            <div class="form__block-col">
+                                                <input name="name" type="text" placeholder="Имя" required>
+                                                <input name="surname" type="text" placeholder="Фамилия" required>
+                                                <input name="phone" id="phone" type="text"
+                                                    placeholder="Контактный телефон" required>
+                                                <input name="email" type="email" placeholder="Адрес корпоративной почты"
+                                                    required>
+                                            </div>
+                                            <div class="form__block-col">
+                                                <input name="position" type="text" placeholder="Ваша должность"
+                                                    required>
+                                                <input name="employees" id="number" type="text"
+                                                    placeholder="Количество сотрудников" required>
+                                                <input name="source" type="text"
+                                                    placeholder="Удобная дата для онлайн-встречи" required>
+                                                <input name="date" type="text"
+                                                    placeholder="Как Вы узнали о Программе PrimeZone" required>
+                                            </div>
                                         </div>
                                         <div class="form__agreement">
                                             <label>
@@ -395,11 +400,17 @@
                                     <form class="form" action="">
                                         <h3 class="form__title">Оставить заявку</h3>
                                         <div class="form__block">
-                                            <input class="form__block-input-width" name="merchant_name" type="text" placeholder="Имя" required>
-                                            <input class="form__block-input-width" name="merchant_surname" type="text" placeholder="Фамилия" required>
-                                            <input class="form__block-input-width" name="merchant_phone" id="phone-2" type="text"
-                                                placeholder="Ваш телефон" required>
-                                            <input class="form__block-input-width" name="merchant_email" type="email" placeholder="Ваш e-mail" required>
+                                            <div class="form__block-col">
+                                                <input name="merchant_name" type="text" placeholder="Имя" required>
+                                                <input name="merchant_surname" type="text" placeholder="Фамилия"
+                                                    required>
+                                            </div>
+                                            <div class="form__block-col">
+                                                <input name="merchant_phone" id="phone-2" type="text"
+                                                    placeholder="Ваш телефон" required>
+                                                <input name="merchant_email" type="email" placeholder="Ваш e-mail"
+                                                    required>
+                                            </div>
                                         </div>
                                         <div>
                                             <textarea class="text__area" name="merchantfield1" id="merchantfield1"
@@ -430,7 +441,6 @@
             </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
