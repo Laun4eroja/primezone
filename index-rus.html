@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="intro__buttons">
             <div class="intro__btn">01</div>
             <div class="intro__btn">02</div>
@@ -35,8 +35,10 @@
                 локальной экспертизы</h1>
         </div>
         <div class="intro__scroll-down">
-            <a href="#info">
-                <img src="./images/icons/down-arrow.png" alt="">
+            <a class="arrow-down" href="#info">
+                <span></span>
+                <span></span>
+                <span></span>
             </a>
         </div>
         <div class="intro__app">
@@ -278,7 +280,7 @@
                             </div>
                             <div class="statistics__item-box">
                                 <p>Последняя независимая оценка NPS со стороны одного из наших крупнейших клиентов
-                                    (охватываем 400+ тысяч сотрудников) составила 55.4</p>
+                                    составила 55.4</p>
                             </div>
                         </div>
                     </div>
@@ -349,26 +351,26 @@
                                     <form class="form" action="">
                                         <h3 class="form__title">Оставить заявку</h3>
                                         <div class="form__block">
-                                            <input name="name" class="form__block-name" type="text" placeholder="Имя"
+                                            <input class="form__block-input-width" name="name" type="text" placeholder="Имя" required>
+                                            <input class="form__block-input-width" name="surname" type="text" placeholder="Фамилия" required>
+                                            <input class="form__block-input-width" name="phone" id="phone" type="text" placeholder="Контактный телефон"
                                                 required>
-                                            <input name="email" class="form__block-mail" type="email"
-                                                placeholder="e-mail" required>
-                                            <input name="phone" id="phone" class="form__block-phone" type="text"
-                                                placeholder="Телефон" required>
-                                            <input name="companyName" class="form__block-company" type="text"
-                                                placeholder="Название компании" required>
-                                            <input name="countOfEmployee" id="number" class="form__block-count"
-                                                type="text" placeholder="Количество сотрудников" required>
-                                        </div>
-                                        <div class="text__area">
-                                            <textarea name="textarea" placeholder="Текст сообщения"></textarea>
+                                            <input class="form__block-input-width" name="email" type="email" placeholder="Адрес корпоративной почты"
+                                                required>
+                                            <input class="form__block-input-width" name="position" type="text" placeholder="Ваша должность" required>
+                                            <input class="form__block-input-width" name="employees" id="number" type="text"
+                                                placeholder="Количество сотрудников" required>
+                                            <input class="form__block-input" name="source" type="text"
+                                                placeholder="Удобная дата для онлайн-встречи" required>
+                                            <input class="form__block-input" name="date" type="text"
+                                                placeholder="Как Вы узнали о Программе PrimeZone" required>
                                         </div>
                                         <div class="form__agreement">
                                             <label>
                                                 <input type="checkbox" name="agreement" required class="real-checkbox">
                                                 <span class="custom-checkbox"></span>
                                                 Согласен на обработку персональных данных в соответствии с <a
-                                                    href="agreement.html" target="_blank">Политикой
+                                                    href="agreement-rus.html" target="_blank">Политикой
                                                     конфиденциальности</a>
                                             </label>
                                         </div>
@@ -391,28 +393,30 @@
                                         </p>
                                     </div>
                                     <form class="form" action="">
-                                        <h3 class="form__title">Мерчант хочет оставить заявку</h3>
+                                        <h3 class="form__title">Оставить заявку</h3>
                                         <div class="form__block">
-                                            <input name="name" class="form__block-name" type="text" placeholder="Имя"
-                                                required>
-                                            <input name="email" class="form__block-mail" type="email"
-                                                placeholder="e-mail" required>
-                                            <input name="phone" id="phone-2" class="form__block-phone" type="text"
-                                                placeholder="Телефон" required>
-                                            <input name="companyName" class="form__block-company" type="text"
-                                                placeholder="Название компании" required>
-                                            <input name="countOfEmployee" class="form__block-count" type="text"
-                                                placeholder="Ваша индустрия" required>
+                                            <input class="form__block-input-width" name="merchant_name" type="text" placeholder="Имя" required>
+                                            <input class="form__block-input-width" name="merchant_surname" type="text" placeholder="Фамилия" required>
+                                            <input class="form__block-input-width" name="merchant_phone" id="phone-2" type="text"
+                                                placeholder="Ваш телефон" required>
+                                            <input class="form__block-input-width" name="merchant_email" type="email" placeholder="Ваш e-mail" required>
                                         </div>
-                                        <div class="text__area">
-                                            <textarea name="textarea" placeholder="Текст сообщения"></textarea>
+                                        <div>
+                                            <textarea class="text__area" name="merchantfield1" id="merchantfield1"
+                                                placeholder="Сколько лет Ваша организация работает на Российском рынке и каковы позиции Вашей компании в соответствующей индустрии?"></textarea>
+                                            <textarea class="text__area" name="merchantfield2" id="merchantfield2"
+                                                placeholder="Просим Вас выработать и направить Ваше эксклюзивное предложение для выпуска в Программе PrimeZone."></textarea>
+                                            <textarea class="text__area" name="merchantfield3" id="merchantfield3"
+                                                placeholder="Укажите удобные дату и время для организации встречи или видео-конференции с представителями команды PrimeZone"></textarea>
+                                            <textarea class="text__area" name="merchantfield4" id="merchantfield4"
+                                                placeholder="Как Вы узнали о Программе PrimeZone?"></textarea>
                                         </div>
                                         <div class="form__agreement">
                                             <label>
                                                 <input type="checkbox" name="agreement" required class="real-checkbox">
                                                 <span class="custom-checkbox"></span>
                                                 Согласен на обработку персональных данных в соответствии с <a
-                                                    href="agreement.html" target="_blank">Политикой
+                                                    href="agreement-rus.html" target="_blank">Политикой
                                                     конфиденциальности</a>
                                             </label>
                                         </div>
@@ -430,7 +434,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <a class="footer__logo" href="#!">
+                <a class="footer__logo" href="#intro">
                     <img src="./images/icons/logo.svg" alt="logo">
                 </a>
                 <div class="copyrigt">
@@ -453,6 +457,15 @@
             </div>
         </div>
     </footer>
+    <div class="scroll-top">
+        <div class="intro__scroll-down">
+            <div class="arrow-to-top">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
     <script src="https://unpkg.com/imask"></script>
     <script src="js/main.js"></script>
 </body>
