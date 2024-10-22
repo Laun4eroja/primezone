@@ -1387,3 +1387,9 @@ body {
         gap: 10px;
     }
 }
+
+@media (max-width: 370px) {
+    .header__logo a img {
+        max-width: 105px;
+    }
+}
