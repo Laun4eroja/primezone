@@ -105,23 +105,10 @@ function changeSlide(index) {
 
 const headerBurger = document.getElementById('burger');
 const headerSection = document.querySelector('.header');
-const sidebarMenuBtn = document.querySelectorAll('.sidebar__menu-btn');
 
 headerBurger.addEventListener('click', function() {
   headerSection.classList.toggle('open')
-    if(headerBurger.classList.toggle('open')) {
-      document.body.classList.add('overflow');
-  } else {
-      document.body.classList.remove('overflow');
-  }
 });
-
-sidebarMenuBtn.forEach(el => {
-  el.onclick = function() {
-    headerSection.classList.remove('open');
-    document.body.classList.remove('overflow');
-  };
-})
 
 
 const elementPhone = document.getElementById('phone');
