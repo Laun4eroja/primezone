@@ -103,8 +103,16 @@ function changeSlide(index) {
 }
 
 
-document.getElementById('burger').addEventListener('click', function() {
-  document.querySelector('header').classList.toggle('open')
+const headerBurger = document.getElementById('burger');
+const headerSection = document.querySelector('.header');
+
+headerBurger.addEventListener('click', function() {
+  headerSection.classList.toggle('open')
+    if(headerBurger.classList.toggle('open')) {
+      document.body.classList.add('overflow');
+  } else {
+      document.body.classList.remove('overflow');
+  }
 });
 
 
