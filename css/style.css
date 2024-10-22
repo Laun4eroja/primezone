@@ -61,6 +61,10 @@ body {
     padding: 0 1.875em;
 }
 
+.header.open {
+    z-index: 2000;
+}
+
 .header.open .sidebar {
     transform: translateX(100%);
 }
@@ -1307,10 +1311,6 @@ body {
         font-size: 26px;
         max-width: 550px;
     }
-    .intro__btn {
-        font-size: 10px;
-        padding: 20px 12px;
-    }
     .intro__app ul {
         flex-direction: column;
         gap: 5px;
@@ -1375,13 +1375,6 @@ body {
         top: -109px;
         padding-top: 100px;
     }
-    .intro__buttons {
-        top: -8%;
-        left: 20%;
-    }
-    .intro__btn {
-        padding: 10px 6px;
-    }
 }
 
 @media (max-width: 460px) {
@@ -1389,16 +1382,5 @@ body {
         left: 10%;
         font-size: 18px;
         max-width: 380px;
-    }
-    .intro__app {
-        width: 118px;
-        right: 0;
-    }
-    .header__signUp a {
-        font-size: 8px;
-        padding: 6px 5px 6px;
-    }
-    .intro__buttons {
-        left: 30%;
     }
 }
