@@ -1383,4 +1383,7 @@ body {
         font-size: 18px;
         max-width: 380px;
     }
+    .header__row {
+        gap: 10px;
+    }
 }
