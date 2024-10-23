@@ -52,9 +52,6 @@ function changeTitleIntro(indexIntroTitle) {
 }
 
 
-
-
-
 const tabBtns = Array.from(document.querySelectorAll('.tab__btn'));
 const tabIndicator = document.querySelector(".tab__indicator");
 const tabSlide = Array.from(document.querySelectorAll(".tab__slide"));
