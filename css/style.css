@@ -1513,8 +1513,11 @@ body {
     .tab__slide-item img {
         width: 80%;
     }
+    .tab__slide-text {
+        font-size: 14px;
+    }
     .info__left:has(.tab__slide-long.active) {
-        height: 1350px;
+        height: 1450px;
     }
 }
 
