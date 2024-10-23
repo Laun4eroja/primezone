@@ -1311,6 +1311,9 @@ body {
         font-size: 26px;
         max-width: 550px;
     }
+    .intro__app {
+        bottom: 8%;
+    }
     .intro__app ul {
         flex-direction: column;
         gap: 5px;
@@ -1329,9 +1332,6 @@ body {
     .header__right-menu {
         flex-direction: column-reverse;
         align-items: flex-end;
-    }
-    .switch_lang {
-        font-size: 12px;
     }
     .header__burger {
         height: 30px;
