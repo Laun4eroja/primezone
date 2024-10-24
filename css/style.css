@@ -1641,6 +1641,10 @@ body {
     .scroll-top {
         right: 9%;
     }
+    .contacts__info-item:nth-child(3){
+        text-align: center;
+        flex-grow: 1;
+    }
 }
 
 @media (max-width: 467px) {
