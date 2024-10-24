@@ -1263,7 +1263,8 @@ body {
         padding: 20px 12px;
     }
     .statistics__title,
-    .map__title {
+    .map__title,
+    .contacts__title {
         font-size: 42px;
     }
     .statistics__list {
@@ -1301,6 +1302,16 @@ body {
         flex-direction: column;
         text-align: center;
     }
+    .form__block {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contacts__body {
+        padding: 0 120px;
+    }
+    .contacts__tab:has(.contacts__tab-slide--long.active) {
+        height: 1460px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -1330,6 +1341,12 @@ body {
     }
     .statistics__item-box p {
         font-size: 16px;
+    }
+    .contacts__title {
+        font-size: 32px;
+    }
+    .contacts__body {
+        padding: 0;
     }
 }
 
@@ -1407,7 +1424,8 @@ body {
         z-index: 3000;
     }
     .statistics,
-    .map {
+    .map,
+    .contacts {
         padding: 30px 0;
     }
 }
@@ -1426,6 +1444,19 @@ body {
     }
     .info__left {
         max-width: -webkit-fill-available;
+    }
+    .contacts__top {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .contacts__title {
+        width: 100%;
+    }
+    .contacts__wrapper {
+        gap: 20px;
+    }
+    .contacts__tab-top {
+        max-width: unset;
     }
 }
 
@@ -1446,16 +1477,80 @@ body {
         height: 30px;
     }
     .sidebar {
-        top: -119px;
+        top: -123px;
     }
     .statistics__list {
         gap: 30px 5px;
     }
     .statistics__item {
-        gap: 15px;
+        gap: 8px;
     }
-    .tab__slide.active:has(.info__left) {
-        background-color: rebeccapurple;
+    .form {
+        padding: 20px;
+    }
+    .contacts__tab-top {
+        margin-bottom: 15px;
+    }
+    .contacts__tab-text {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .contacts__tab-btn {
+        font-size: 16px;
+    }
+    .contacts__content-text {
+        font-size: 14px;
+    }
+    .contacts__content-text p+p {
+        margin-top: 5px;
+    }
+    .contacts__tab {
+        height: 1130px;
+    }
+    .form__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .form__block {
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    .form__block-col {
+        gap: 20px;
+    }
+    .form__block input {
+        height: 30px;
+        font-size: 14px;
+    }
+    .form__block input::placeholder {
+        font-size: 12px;
+    }
+    .text__area {
+        font-size: 14px;
+    }
+    .text__area::placeholder {
+        font-size: 12px;
+    }
+    .form__agreement {
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .custom-checkbox {
+        width: 15px;
+        height: 15px;
+    }
+    .form__btn {
+        font-size: 12px;
+        padding: 10px 40px;
+    }
+    .contacts__tab {
+        height: 880px;
+    }
+    .contacts__tab:has(.contacts__tab-slide--long.active) {
+        height: 1160px;
+    }
+    .switch_lang p {
+        padding-top: 7px;
     }
 }
 
@@ -1490,7 +1585,7 @@ body {
         transform: translateY(8px);
     }
     .sidebar {
-        top: -109px;
+        top: -113px;
         padding-top: 100px;
     }
     .tab__slide-text p+p {
