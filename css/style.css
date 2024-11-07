@@ -79,7 +79,7 @@ body {
 .header__logo a img {
     display: block;
     margin: 0 auto;
-    max-width: 200px;
+    max-width: 250px;
 }
 
 .header__right-menu {
@@ -1410,7 +1410,8 @@ body {
         background-color: unset;
     }
     .header__logo a img {
-        max-width: 150px;
+        max-width: 200px;
+        margin-top: -20px;
     }
     .tab__slide-complex {
         gap: 30px;
@@ -1605,7 +1606,7 @@ body {
         padding: 8px 8px 6px;
     }
     .header__logo a img {
-        max-width: 120px;
+        max-width: 150px;
     }
     .header__burger {
         width: 22px;
@@ -1709,7 +1710,8 @@ body {
 
 @media (max-width: 370px) {
     .header__logo a img {
-        max-width: 105px;
+        max-width: 110px;
+        margin-top: -10px;
     }
     .info__right h2 {
         font-size: 28px;
